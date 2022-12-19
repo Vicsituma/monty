@@ -31,7 +31,6 @@ int pint_error(unsigned int line_number)
 }
 
 /**
-
  * short_stack_error - Prints monty math function error messages
  *                     for stacks/queues smaller than two nodes.
  * @line_number: Line number in Monty bytecodes file where error occurred.

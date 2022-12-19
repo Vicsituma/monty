@@ -21,7 +21,7 @@ extern char **op_toks;
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO
  */
- typedef struct stack_s
+typedef struct stack_s
 {
 	int n;
 	struct stack_s *prev;
@@ -39,7 +39,7 @@ typedef struct instruction_s
 {
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
-}instruction_t;
+} instruction_t;
 
 /* PRIMARY INTERPRETER FUNCTIONS */
 
@@ -89,4 +89,6 @@ int pint_error(unsigned int line_number);
 int short_stack_error(unsigned int line_number, char *op);
 int div_error(unsigned int line_number);
 int pchar_error(unsigned int line_number, char *message);
+
+
 #endif
