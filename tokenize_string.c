@@ -13,7 +13,6 @@ char *get_next_word(char *str, char *delims);
  * @delims: delimitors to use to delimit words
  *
  * Return: 2D array of pointers to each word
-
 */
 
 char **strtow(char *str, char *delims)
